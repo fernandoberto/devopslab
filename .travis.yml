@@ -25,6 +25,6 @@ deploy:
   api_key: $HEROKU_API_KEY
   edge: true 
   app: devopslab-fernando
-  info: skip_notification
+  strategy: api
   on:
       branch: main
