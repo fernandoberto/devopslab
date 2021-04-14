@@ -24,7 +24,8 @@ install:
 
 # Defini o script de Teste que deve rodar toda vez que o código for alterado...                                                                                                                            
 
-script:                                                                                                                                                                                                  
+script:          
+
   - coverage run test.py || travis_terminate 1;
   - coverage report app.py || travis_terminate 1;
   - coverage xml app.py || travis_terminate 1;
