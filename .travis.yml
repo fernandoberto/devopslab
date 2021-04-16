@@ -41,6 +41,7 @@ deploy:
   on:
       branch: main
 
+      #Slack
 notifications:
   slack: devopstools-grupo:su6RW9rylZBUJhr3GvBOsmJM      
   on_success: always
