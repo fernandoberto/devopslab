@@ -43,5 +43,5 @@ deploy:
 
 notifications:
   slack: devopstools-grupo:su6RW9rylZBUJhr3GvBOsmJM      
-    on_success: always
-    on_failure: always
+  on_success: always
+  on_failure: always
