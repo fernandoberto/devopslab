@@ -42,7 +42,7 @@ deploy:
       branch: main
 
       #Slack
-notifications:
-  slack: devopstools-grupo:su6RW9rylZBUJhr3GvBOsmJM      
-  on_success: always
-  on_failure: always
+      #notifications:
+      #slack: COLOCAR TOKEN     
+      # on_success: always
+      # on_failure: always
