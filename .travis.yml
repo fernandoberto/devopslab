@@ -10,7 +10,7 @@ dist: xenial
 
 jobs:
   include:
-    - stage: Testes
+    - stage: Ambiente de Testes
 
       name: "Testes Unitarios"
       # Instalação de Módulos que são necessários para a Aplicação.
@@ -29,7 +29,20 @@ jobs:
           organization: fernandorberto
           token: ${SONAR_TOKEN}
 
-    - stage: Deploy
+    - stage: Deploy Ambiente de QA
+	  name: "Deploy no ambiente de QA"	
+      script: curl -i https://devopslab-fernando-qa.herokuapp.com/
+      # Definir o Deploy no Heroku - ambiente de QA
+      deploy:
+        provider: heroku
+        strategy: api
+        api_key: $HEROKU_API_KEY
+        edge: true
+        app: devops-fernando-qa
+        on:
+          branch: main
+
+   - stage: Deploy Ambiente de Producao
       script: skip
       # Definir o Deploy no Heroku
       deploy:
