@@ -30,7 +30,7 @@ jobs:
         strategy: api
         api_key: $HEROKU_API_KEY
         edge: true
-        app: devops-fernando-qa
+        app: devopslab-fernando-qa
         'on':
           branch: main
     - stage: Deploy em Produção
