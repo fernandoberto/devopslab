@@ -29,7 +29,7 @@ jobs:
           organization: fernandorberto
           token: ${SONAR_TOKEN}
 
-    - stage: Deploy Ambiente de QA
+    - stage: Deploy ambiente de QA
 	  name: "Deploy no ambiente de QA"	
       script: curl -i https://devopslab-fernando-qa.herokuapp.com/
       # Definir o Deploy no Heroku - ambiente de QA
