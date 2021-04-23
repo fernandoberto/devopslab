@@ -50,7 +50,7 @@ jobs:
 
     - stage: STG TEST
       script:
-        - curl https://devops-fernando-qa.herokuapp.com/ | grep Pipeline || travis_terminate 1;
+        - curl https://devopslab-fernando-qa.herokuapp.com/ | grep Pipeline || travis_terminate 1;
 
     - stage: PROD Deploy
       script: skip
