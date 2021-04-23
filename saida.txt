@@ -1,0 +1,7 @@
+Filesystem                                                             Size  Used Avail Use% Mounted on
+overlay                                                                 22G  8.8G   13G  42% /
+10.0.0.33:/mnt/user_storage/homedirs/FernandoBerto/tmp                 5.8T  4.6T  944G  84% /tmp
+10.0.0.33:/mnt/user_storage/homedirs/FernandoBerto/var/www             5.8T  4.6T  944G  84% /var/www
+10.0.0.33:/mnt/user_storage/homedirs/FernandoBerto/home/FernandoBerto  5.8T  4.6T  944G  84% /home/FernandoBerto
+10.0.0.76:/mnt/log_storage/homedirs/FernandoBerto/var/log              3.9T  1.5T  2.3T  40% /var/log
+tmpfs                                                                   64M     0   64M   0% /dev/shm
